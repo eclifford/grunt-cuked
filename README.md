@@ -37,17 +37,47 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+Configuration for [Cuked API](https://github.com/eclifford/cuked#path)
+
+#### options.path
 Type: `String`
-Default value: `',  '`
+Default value: `'./features'`
 
-A string value that is used to do something with whatever.
-
-#### options.punctuation
+#### options.browser
 Type: `String`
-Default value: `'.'`
+Default value: `'phantomjs'`
 
-A string value that is used to do something else with whatever else.
+#### options.host
+Type: `String`
+Default value: `'localhost'`
+
+#### options.port
+Type: `Integer`
+Default value: `4444`
+
+#### options.user
+Type: `String`
+Default value: ``
+
+#### options.key
+Type: `String`
+Default value: ``
+
+#### options.platform
+Type: `String`
+Default value: `ANY`
+
+#### options.version
+Type: `String`
+Default value: ``
+
+#### options.name
+Type: `String`
+Default value: ``
+
+#### options.log
+Type: `String`
+Default value: `silent`
 
 ### Usage Examples
 
@@ -57,27 +87,10 @@ In this example, the default options are used to do something with whatever. So 
 ```js
 grunt.initConfig({
   cuked: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  cuked: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+      path: 'test/features',
+      log: 'command'
+    }
   },
 })
 ```
