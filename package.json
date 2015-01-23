@@ -1,6 +1,6 @@
 {
   "name": "grunt-cuked",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Grunt plugin for cuked",
   "repository": "",
   "author": {
@@ -28,6 +28,6 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "cuked": "0.0.1"
+    "cuked": "^0.0.1"
   }
 }
